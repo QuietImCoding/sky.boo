@@ -11,6 +11,10 @@ iframe {
     border: none;
 }
 
+h1 {
+    font-family: "Gaegu Bold";
+}
+
 body {
     background-color: #76E4FF;
     display: flex;
