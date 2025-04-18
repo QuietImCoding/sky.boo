@@ -1,0 +1,21 @@
+@font-face { 
+    font-family: 'Gaegu Bold';
+    src: url('/Gaegu-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+iframe {
+    width: 60px;
+    padding: 0px 20px 0px 20px;
+    border: none;
+}
+
+body {
+    background-color: #76E4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 100px;
+}
