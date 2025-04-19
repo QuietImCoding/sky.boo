@@ -1,9 +1,12 @@
-<script>
-    let { target } = $props();
+<script lang="ts">
+
+    import {avatarState} from "./+page.svelte";
+
+    let { target } : {target: keyof typeof avatarState} = $props();
 </script>
 
 <div class="control-row">
     {target}
-    <button>&lt;</button>
-    <button>&gt;</button>
+    <button onclick={() => avatarState[target]-= 1}>&lt;</button>
+    <button onclick={() => avatarState[target]+= 1}>&gt;</button>
 </div>

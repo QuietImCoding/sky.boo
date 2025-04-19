@@ -1,16 +1,25 @@
-<script lang="ts">
+<script module lang='ts'>
   import AvatarStack from "./AvatarStack.svelte";
   import ControlRow from "./ControlRow.svelte";
   import "/src/lib/styles/avatar.css";
+
+  interface Avatar { backdrop: number, ghostie: number, hat: number, glasses: number }
+  export const avatarState : Avatar = $state({
+    backdrop: 0, 
+    ghostie: 0, 
+    hat: 0, 
+    glasses: 0
+  });
+  
 </script>
 
 <title>AVATAR</title>
 
 <p>Customize your avatar</p>
 <div id="avatar">
-  <AvatarStack />
+  <AvatarStack/>
   <div id="controls">
-    <ControlRow target="background" />
+    <ControlRow target="backdrop"/>
     <ControlRow target="ghostie" />
     <ControlRow target="hat" />
     <ControlRow target="glasses" />
