@@ -4,6 +4,6 @@
 
 <div class="control-row">
     {target}
-    <button>prev</button>
-    <button>next</button>
+    <button>&lt;</button>
+    <button>&gt;</button>
 </div>
