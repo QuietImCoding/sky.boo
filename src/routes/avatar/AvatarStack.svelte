@@ -15,7 +15,7 @@
     <!-- Goes through all the layers in the array and generates the image stack-->
     {#each layers as layer }
         <img src={'/avatars/' + layer.name + '/' +
-            Math.max(0, avatarState[layer.name as keyof typeof avatarState] % layer.count) + ".png"} alt="" class="stacked {layer.layer}" id={layer.name}/>
+            Math.abs(avatarState[layer.name as keyof typeof avatarState] % layer.count) + ".png"} alt="" class="stacked {layer.layer}" id={layer.name}/>
     {/each}
 
 </div>
