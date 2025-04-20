@@ -1,0 +1,58 @@
+{
+    "lexicon": 1,
+    "id": "boo.sky.ghost",
+    "defs": {
+      "main": {
+        "type": "record",
+        "description" : "A set of parameters used to generate boo sky avatars",
+        "key" : "tid", 
+        "record" : {
+            "type" : "object", 
+            "properties" : {
+                "backdrop" : {
+                    "type" : "integer", 
+                    "description" : "id of the backdrop to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "ghostie" : {
+                    "type" : "integer", 
+                    "description" : "id of the base ghost image to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "flairleft" : {
+                    "type" : "integer", 
+                    "description" : "id of the left flair to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "flairright" : {
+                    "type" : "integer", 
+                    "description" : "id of the right flair to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "hat" : {
+                    "type" : "integer", 
+                    "description" : "id of the hat to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "glasses" : {
+                    "type" : "integer", 
+                    "description" : "id of the glasses to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                },
+                "photobomb" : {
+                    "type" : "integer", 
+                    "description" : "id of the photobomb to use", 
+                    "minimum" : 0, 
+                    "default" : 0
+                }
+            }
+        }
+      }
+    }
+  }
