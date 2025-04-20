@@ -2,12 +2,13 @@
 
     import {avatarState}  from "./+page.svelte";
 
-    let layers = [
-        { name: "backdrop", count: 5, layer: "bottom" },
-        { name: "ghostie", count: 9, layer: "middle" },
-        { name: "hat", count: 4, layer: "top" },
-        { name: "glasses", count: 4, layer: "top" }
-    ];
+    import {layers} from "./LayersConfig";
+    // let layers = [
+    //     { name: "backdrop", count: 5, layer: "bottom" },
+    //     { name: "ghostie", count: 9, layer: "middle" },
+    //     { name: "hat", count: 4, layer: "top" },
+    //     { name: "glasses", count: 4, layer: "top" }
+    // ];
 
 </script>
 

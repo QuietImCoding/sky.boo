@@ -12,6 +12,7 @@ div#stack {
     width: 500px;
     height:500px;
     position: relative;
+    padding: 0px;
 }
 
 img {
