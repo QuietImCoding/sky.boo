@@ -4,8 +4,8 @@
 
     let layers = [
         { name: "backdrop", count: 5, layer: "bottom" },
-        { name: "ghostie", count: 7, layer: "middle" },
-        { name: "hat", count: 3, layer: "top" },
+        { name: "ghostie", count: 8, layer: "middle" },
+        { name: "hat", count: 4, layer: "top" },
         { name: "glasses", count: 4, layer: "top" }
     ];
 
