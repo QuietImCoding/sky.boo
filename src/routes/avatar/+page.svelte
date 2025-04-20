@@ -25,3 +25,5 @@
     <ControlRow target="glasses" />
   </div>
 </div>
+
+<a href="/avatar/submissions">Submit your own ghost pieces</a>

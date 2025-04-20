@@ -3,6 +3,11 @@
     flex-flow: row;
 }
 
+div {
+    padding: 15px;
+    border: dotted darkblue;
+}
+
 div#stack {
     width: 500px;
     height:500px;
@@ -38,4 +43,17 @@ div#stack {
     left: 125px;
     top: 150px;
     z-index: 2;;
+}
+
+a {
+    background-color: magenta;
+    font-size: 2em;
+    padding: 5px;
+    font-family: "Gaegu Bold";
+    margin: 10px;
+}
+
+a:hover {
+    background-color: pink;
+    transition: 0.1s;
 }

@@ -24,3 +24,8 @@ body {
     flex-flow: column;
     padding: 100px;
 }
+
+footer { 
+    padding: 15px;
+    text-align: center;
+}

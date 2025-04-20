@@ -10,5 +10,7 @@
 
 {@render children()}
 
+<footer>
 <p>sky.boo property of ghostie inc</p>
 <p>a subsidiary of Business Goose LLC</p>
+</footer>
