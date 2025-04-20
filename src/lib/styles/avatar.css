@@ -1,6 +1,15 @@
 #avatar {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+}
+
+#controls {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.control-row {
+    height: 30px;
 }
 
 div {
