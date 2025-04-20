@@ -10,15 +10,18 @@
     hat: number;
     glasses: number;
     photobomb: number;
-    flairright: number
-  }
+    flairright: number;
+    flairleft: number;
+  };
+
   export const avatarState: Avatar = $state({
     backdrop: 0,
     ghostie: 0,
     hat: 0,
     glasses: 0,
     photobomb: 0,
-    flairright: 0
+    flairright: 0,
+    flairleft: 0
   });
 </script>
 
