@@ -1,6 +1,7 @@
 <script module lang="ts">
   import AvatarStack from "./AvatarStack.svelte";
   import ControlRow from "./ControlRow.svelte";
+  import { layers } from "./LayersConfig";
   import "/src/lib/styles/avatar.css";
 
   interface Avatar {
@@ -9,13 +10,15 @@
     hat: number;
     glasses: number;
     photobomb: number;
+    flairright: number
   }
   export const avatarState: Avatar = $state({
     backdrop: 0,
     ghostie: 0,
     hat: 0,
     glasses: 0,
-    photobomb: 0
+    photobomb: 0,
+    flairright: 0
   });
 </script>
 
@@ -25,11 +28,9 @@
 <div id="avatar">
   <AvatarStack />
   <div id="controls">
-    <ControlRow target="backdrop" />
-    <ControlRow target="ghostie" />
-    <ControlRow target="hat" />
-    <ControlRow target="glasses" />
-    <ControlRow target="photobomb" />
+    {#each layers as layer}
+    <ControlRow target={layer.name as keyof Avatar} />
+    {/each}
   </div>
 </div>
 
