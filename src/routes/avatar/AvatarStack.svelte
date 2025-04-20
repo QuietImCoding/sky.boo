@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
     import {avatarState}  from "./+page.svelte";
 
@@ -9,18 +9,13 @@
         { name: "glasses", count: 4, layer: "top" }
     ];
 
-    let backdropURL = $derived('/avatars/background/' + Math.max(0, avatarState.backdrop % 5) + '.png');
-    let ghostieURL = $derived('/avatars/ghostie/' + Math.max(0, avatarState.ghostie % 7) + '.png');
-
-    //OPTIONAL
-    let hatURL = $derived('/avatars/hat/' + Math.max(0, avatarState.hat % 3) + '.png');
-    let glassesURL = $derived('/avatars/glasses/' + Math.max(0, avatarState.glasses % 4) + '.png');
-
 </script>
 
 <div id="stack">
-    <img src={backdropURL} alt="" id="backdrop" class="stacked bottom">
-    <img src={ghostieURL} alt="" id="ghostie" class="stacked middle"/>
-    <img src={hatURL} alt="" id="hat" class="stacked top">
-    <img src={glassesURL} alt="" id="glasses" class="stacked top">
+    <!-- Goes through all the layers in the array and generates the image stack-->
+    {#each layers as layer }
+        <img src={'/avatars/' + layer.name + '/' +
+            Math.max(0, avatarState[layer.name as keyof typeof avatarState] % layer.count) + ".png"} alt="" class="stacked {layer.layer}" id={layer.name}/>
+    {/each}
+
 </div>
