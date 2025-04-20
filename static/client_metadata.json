@@ -1,0 +1,15 @@
+{
+    "client_id": "https://sky.boo/client-metadata.json",
+    "client_name": "boosky",
+    "client_uri": "https://sky.boo",
+    "logo_uri": "https:/sky.boo/logo.png",
+    "tos_uri": "https://sky.boo/tos",
+    "policy_uri": "https://sky.boo/policy",
+    "redirect_uris": ["https://sky.boo/callback"],
+    "scope": "atproto",
+    "grant_types": ["authorization_code", "refresh_token"],
+    "response_types": ["code"],
+    "token_endpoint_auth_method": "none",
+    "application_type": "web",
+    "dpop_bound_access_tokens": true
+  }
