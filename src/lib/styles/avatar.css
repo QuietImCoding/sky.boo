@@ -12,14 +12,27 @@ div#stack {
     width: 500px;
     height:500px;
     position: relative;
-
 }
 
+img {
+    border: none;
+}
+
+.stacked {
+    position: absolute;
+}
+.bottom {
+    z-index: 0;
+}
+.middle {
+    z-index: 1;
+}
+.top {
+    z-index: 2;
+}
 #backdrop {
     width: 500px;
     height: 500px;
-    z-index: 0;
-    position: absolute;
 }
 
 #ghostie {
@@ -27,33 +40,46 @@ div#stack {
     height: 350px;
     left: 125px;
     top: 75px;
-    position: absolute;
-    z-index: 1;
 }
 
 #hat {
+    width: 150px;
+    height: 100px;
     left: 175px;
     top: 25px;
-    position: absolute;
-    z-index: 2; 
 }
 
 #glasses {
-    position: absolute;
+    width: 250px;
+    height: 100px;
     left: 125px;
     top: 150px;
-    z-index: 2;;
 }
 
-a {
-    background-color: magenta;
-    font-size: 2em;
-    padding: 5px;
-    font-family: "Gaegu Bold";
-    margin: 10px;
+#flairleft {
+    width: 175px;
+    height: 175px;
+    left: 0px;
+    top: 150px;
 }
 
-a:hover {
-    background-color: pink;
-    transition: 0.1s;
+#flairright {
+    width: 175px;
+    height: 175px;
+    left: 325px;
+    top: 150px;
+}
+
+#pet {
+    width: 200px;
+    height: 150px;
+    left: 0px;
+    top: 350px;
+}
+
+#photobomb { 
+    width: 200px;
+    height: 150px;
+    left: 300px;
+    top: 350px;
 }
