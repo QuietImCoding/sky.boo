@@ -4,5 +4,4 @@
 </script>
 
 <title>BooSky Personal Data Spirit</title>
-<a href="/avatar">Customize Your Avatar</a>
 <Ghostie />

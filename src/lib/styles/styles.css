@@ -25,6 +25,17 @@ body {
     padding: 100px;
 }
 
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+h3 {
+    font-family: "Gaegu Bold";
+}
+
 footer { 
     padding: 15px;
     text-align: center;
