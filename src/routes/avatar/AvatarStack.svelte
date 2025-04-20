@@ -9,12 +9,12 @@
         { name: "glasses", count: 4, layer: "top" }
     ];
 
-    let backdropURL = $derived('/avatars/background/' + avatarState.backdrop % 5 + '.png');
-    let ghostieURL = $derived('/avatars/ghostie/' + avatarState.ghostie % 7 + '.png');
+    let backdropURL = $derived('/avatars/background/' + Math.max(0, avatarState.backdrop % 5) + '.png');
+    let ghostieURL = $derived('/avatars/ghostie/' + Math.max(0, avatarState.ghostie % 7) + '.png');
 
     //OPTIONAL
-    let hatURL = $derived('/avatars/hat/' + avatarState.hat % 3 + '.png');
-    let glassesURL = $derived('/avatars/glasses/' + avatarState.glasses % 4 + '.png');
+    let hatURL = $derived('/avatars/hat/' + Math.max(0, avatarState.hat % 3) + '.png');
+    let glassesURL = $derived('/avatars/glasses/' + Math.max(0, avatarState.glasses % 4) + '.png');
 
 </script>
 
