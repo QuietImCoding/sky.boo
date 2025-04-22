@@ -1,23 +1,33 @@
-@font-face { 
-    font-family: 'Gaegu Bold';
-    src: url('/fonts/Gaegu-Bold.ttf') format('truetype');
+/* @import "tailwindcss"; */
+
+@font-face {
+    font-family: "Gaegu Bold";
+    src: url("/fonts/Gaegu-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
-  }
+}
 
+/*
 svg {
     width: 60px;
     padding: 0px 20px 0px 20px;
     border: none;
-}
+    }
 
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 50%;
+    }
 
+*/
 h1 {
     font-family: "Gaegu Bold";
 }
 
 body {
-    background-color: #76E4FF;
+    background-color: #76e4ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,18 +35,11 @@ body {
     padding: 100px;
 }
 
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 50%;
-}
-
 h3 {
     font-family: "Gaegu Bold";
 }
 
-footer { 
+footer {
     padding: 15px;
     text-align: center;
 }

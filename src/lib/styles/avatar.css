@@ -1,25 +1,6 @@
-#avatar {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-#controls {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.control-row {
-    height: 30px;
-}
-
-div {
-    padding: 15px;
-    border: dotted darkblue;
-}
-
 div#stack {
     width: 500px;
-    height:500px;
+    height: 500px;
     position: relative;
     padding: 0px;
 }
@@ -87,7 +68,7 @@ img {
     top: 350px;
 }
 
-#photobomb { 
+#photobomb {
     width: 200px;
     height: 150px;
     left: 300px;
