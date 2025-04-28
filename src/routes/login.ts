@@ -27,7 +27,7 @@ export async function initializeAuth() {
         application_type: "web",
         dpop_bound_access_tokens: true,
       },
-      handleResolver: "https://sky.boo",
+      handleResolver: "https://pds.sky.boo",
     });
 
     agent = new Agent({ service: "https://sky.boo" });
