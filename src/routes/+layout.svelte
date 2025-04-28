@@ -4,7 +4,7 @@
     import "../app.css";
     import type { BrowserOAuthClient } from "@atproto/oauth-client-browser";
 
-    let client: BrowserOAuthClient | undefined = await initializeAuth();
+    let client = initializeAuth();
 </script>
 
 <div id="header" class="text-center w-full flex flex-col my-4">
@@ -14,8 +14,10 @@
         <a href="/"><h3 class="text-xl">home</h3></a>
         <a href="/avatar"><h3 class="text-xl">avatar playground</h3></a>
         <a href="/plan"><h3 class="text-xl">plan</h3></a>
-        <a onclick={(e) => handleLogin(client)}
-            ><h3 class="text-xl">login (coming soon)</h3></a
+        <a
+            onclick={async function (e) {
+                handleLogin(await client);
+            }}><h3 class="text-xl">login (coming soon)</h3></a
         >
     </nav>
 </div>
