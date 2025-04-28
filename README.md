@@ -1,38 +1,22 @@
-# sv
+# boosky
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A friendly introduction to the AT Protocol, with your guide, boo.
 
-## Creating a project
+## Current Planned Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Separate invite-only PDS
+- Avatars and stickers
+- Custom profile showcasing Avatars and stickers
+- Directory of atproto friends
+- Directory of atproto projects
+- Some basic structural overviews on how atproto works and is different from other websites, ideally with cute ghost illustrations
+- Trophies / nicer stickers that
+- Voting page where PDS members can vote for best and worst accounts
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Roadmap
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- [x] Build a basic website
+- [ ] Write the lexicons for stickers, avatars, and profiles
+- [x] Allow users to sign up for boosky
+- [ ] Allow logging in to existing accounts
+-
